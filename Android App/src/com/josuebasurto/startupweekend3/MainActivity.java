@@ -1,4 +1,4 @@
-package com.josuebasurto.startupseekend3;
+package com.josuebasurto.startupweekend3;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
