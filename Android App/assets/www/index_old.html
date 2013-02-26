@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Les Metas-->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+        <!--Les Title-->
+        <title>Startup Weekend App</title>
+
+        <!--Les Scripts-->
+	    <script type="text/javascript" charset="utf-8" src="cordova-2.4.0.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.countdown-es.js"></script>
+        <script src="my.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+        <!--Les Styles-->
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+
+    </head>
+    <body>
+
+        <!-- Home -->
+        <div data-role="page" id="Inicial">
+            <div data-role="content">
+                <div class="centered">
+                    <img src="banner680x160.png" alt="SWLogo"/>
+                </div>
+                
+                <div id="TiempoRestante" class="ui-body ui-body-c">
+                </div>
+                
+                <div id="Ubicacion">
+                    <h2>Ubicaci&oacute;n</h2>
+                    <img src="http://maps.googleapis.com/maps/api/staticmap?center=32.508751,-116.989412&zoom=15&size=400x200&maptype=roadmap&sensor=false&markers=color:blue%7Clabel:S%7C32.508751,-116.989412" width="100%" height="200" />
+                </div>
+                
+                <div id="Registrate">
+                    <a href="javascript: openLink('http://swtijuana3.eventbrite.com/')" data-role="button" target="_blank"
+                       data-theme="e"> Reg&iacutestrate en
+                        <img src="eventspriteling.png"
+                             alt="Eventbrite"
+                             style="vertical-align: middle;" /></a>
+                </div>
+                
+                
+                
+                <div id="Eventos">
+                    <h2>Calendario</h2>
+                    <ul data-role="listview" data-inset="true" data-filter="false" id="ListaCalendario" data-autodividers="true" class="ui-listview">
+                    </ul>
+                </div>
+
+
+                <h2>Difunde!</h2>
+                <a href="javascript: openLink('https://twitter.com/intent/tweet?text=%20%23SWTj3%20')"
+                   target="_blank"
+                   data-role="button"
+                   data-theme="b"><img src="twitter.png" alt="Twitt" style="vertical-align: middle;" /> ¿Qu&eacute; est&aacute;s haciendo?</a>
+
+
+                <h2>Social</h2>
+                <a href="#RedesSociales"
+                   data-role="button"
+                   data-transition="turn">¿Qu&eacute; est&aacute; pasando?</a>
+
+
+                <div id="Official">
+                    <h2>Sitios Oficiales</h2>
+                    <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                        <li data-theme="a">
+                            <a href="javascript: openLink('https://tijuana.startupweekend.org')">
+                                Startup Weekend
+                            </a>
+                        </li>
+                        <li data-theme="a">
+                            <a href="javascript: openLink('http://gdg.mx')">
+                                GDG Tijuana
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+                <div class="centered">
+                    <img src="SW_GDG-Logo.png" alt="SWLogo"/>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="page" id="RedesSociales">
+            <div data-role="header" class="ui-header ui-bar-a" role="banner">
+                <a href="#Inicial"
+                   data-icon="home"
+                   data-iconpos="notext"
+                   data-direction="reverse"
+                   class="ui-btn-left ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-notext ui-btn-up-f"
+                   data-corners="true"
+                   data-shadow="true"
+                   data-iconshadow="true"
+                   data-wrapperels="span"
+                   data-theme="c"
+                   data-transition="turn"
+                   title="Home">
+                    <span class="ui-btn-inner ui-btn-corner-all">
+                        <span class="ui-btn-text">Home</span>
+                        <span class="ui-icon ui-icon-home ui-icon-shadow">&nbsp;</span>
+                    </span>
+                </a>
+                <h1 class="ui-title" role="heading" aria-level="1">Social</h1>
+            </div>
+
+            <div data-role="content">
+
+                <div id="Social">
+                    <div class="centered">
+                        <img src="twitter.png" alt="Twitts" />
+                    </div>
+
+                    </ul>
+                </div>
+
+                <hr>
+                <div class="centered">
+                    <img src="SW_GDG-Logo.png" alt="SWLogo"/>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
