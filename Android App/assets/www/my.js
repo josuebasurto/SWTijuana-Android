@@ -7,6 +7,7 @@ var msPerDay = 24 * 60 * 60 * 1000 ;
 var googleApiKey = "AIzaSyDS5zTvWBetR7ngAYtdcoT02HtUwyACaC8";
 var weekday = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" ];
 var requestcalendar = "https://www.googleapis.com/calendar/v3/calendars/0538djil1mtduscku37mvu3nos%40group.calendar.google.com/events?key=" + googleApiKey;
+var salto = "\n";
 
 /* configuraciones personalizadas */
 var q = encodeURIComponent("#swtijuana OR @startuptijuana OR #SWTJ"); //Query de busqueda de Timeline de Twitter
@@ -29,7 +30,7 @@ function obtieneCalendario(){
                     '</li>');
         });
     }).error(function() {
-            alert("No se pudo sincronizar el Calendario de Actividades. " + requestcalendar);
+            alert("No se pudo sincronizar el Calendario de Actividades. " + salto + salto + requestcalendar);
             $('#Eventos').hide();
         });
 }
@@ -50,9 +51,9 @@ function obtieneTiempoRestante(){
 $(document).ready(function() {
     obtieneTiempoRestante();
 
-    obtieneCalendario();
+    //obtieneCalendario();
 
-    obtieneTimeline();
+    //obtieneTimeline();
 });
 
 /* Funcion que calcula el tiempo restante para el dia del evento a las 6pm */
