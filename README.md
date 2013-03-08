@@ -12,9 +12,9 @@ Google Calendar API: https://www.googleapis.com/calendar/v3/calendars/0538djil1m
 
 Google Calendar Id: 0538djil1mtduscku37mvu3nos%40group.calendar.google.com
 
-HTML: https://www.google.com/calendar/embed?src=0538djil1mtduscku37mvu3nos%40group.calendar.google.com&ctz=America/Los_Angeles
-XML: https://www.google.com/calendar/feeds/0538djil1mtduscku37mvu3nos%40group.calendar.google.com/public/basic
-ICS: https://www.google.com/calendar/ical/0538djil1mtduscku37mvu3nos%40group.calendar.google.com/public/basic.ics
+* HTML: https://www.google.com/calendar/embed?src=0538djil1mtduscku37mvu3nos%40group.calendar.google.com&ctz=America/Los_Angeles
+* XML: https://www.google.com/calendar/feeds/0538djil1mtduscku37mvu3nos%40group.calendar.google.com/public/basic
+* ICS: https://www.google.com/calendar/ical/0538djil1mtduscku37mvu3nos%40group.calendar.google.com/public/basic.ics
 
 Tecnologias Utilizadas:
 ==============================
